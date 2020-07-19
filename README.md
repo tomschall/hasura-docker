@@ -4,19 +4,25 @@ This is the source code for a fully working group chat app that uses subscriptio
 
 Use Node Version 14.5
 
-Run yarn
-
-```
-yarn
-```
-
 Run docker containers
 
 ```
 docker-compose up -d
 ```
 
-Install Hasura cli
+Run yarn
+
+```
+yarn
+```
+
+Then start frontend
+
+```
+yarn start
+```
+
+Install Hasura cli if not installed
 
 Then run migration
 
@@ -24,7 +30,7 @@ Then run migration
 hasura migrate apply
 ```
 
--   [Fully working app](https://realtime-chat.demo.hasura.app/)
--   [Backend](https://realtime-chat.demo.hasura.app/console)
+-   [Fully working app](http://localhost:3000)
+-   [Backend](http://localhost:8080/console)
 
 For a complete tutorial about data modelling, [check out this blog](https://hasura.io/blog/building-a-realtime-chat-app-with-graphql-subscriptions-d68cd33e73f).
